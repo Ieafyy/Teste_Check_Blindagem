@@ -36,6 +36,9 @@ ler. Devido a sigilo industrial, nesse exemplo o arquivo .txt será gerado apena
 
 (Resultados do teste)
 
+O programa que está rodando no Arduino chama-se "StandardFirmata" e pode ser encontrado na IDE do Arduino em Arquivo -> Exemplos -> Firmata. Este 
+programa nos permite ler os valores das portas diretamente do Python, facilitando o processo de obtenção e validação dos valores.
+
 <h2> Analisando o Hardware </h2>
 
 Como dito anteriormente, o hardware foi montado e sua comunicação com o computador acontece pelo Arduino (e a biblioteca PyFirmata para Python).
@@ -56,4 +59,3 @@ x8 resistores de 220Ohms<br>
 x1 Arduino Leonardo
 
 Obs.: Por limitações dos programas usados para fazer o esquemático, os sensores e o Arduino não estão correspondendo com os usados no projeto.
-
