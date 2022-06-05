@@ -35,3 +35,25 @@ ler. Devido a sigilo industrial, nesse exemplo o arquivo .txt será gerado apena
 ![image](https://user-images.githubusercontent.com/70926962/172071748-0b28b37a-5e06-4a7f-a491-26ec157e2f0c.png)
 
 (Resultados do teste)
+
+<h2> Analisando o Hardware </h2>
+
+Como dito anteriormente, o hardware foi montado e sua comunicação com o computador acontece pelo Arduino (e a biblioteca PyFirmata para Python).
+
+![circuito](https://user-images.githubusercontent.com/70926962/172071863-7c45dcdb-1cff-46f7-9794-ae8d20ff7938.png)
+
+(Esquemático)
+
+![circuito_eletrico](https://user-images.githubusercontent.com/70926962/172071868-41e1b342-36eb-4357-bde7-24265b4ff2b9.png)
+
+(Desenho elétrico)
+
+Componentes usados:<br>
+
+x1 fonte de 12V 2A <br>
+x4 sensores indutivos 3 Pinos<br>
+x8 resistores de 220Ohms<br>
+x1 Arduino Leonardo
+
+Obs.: Por limitações dos programas usados para fazer o esquemático, os sensores e o Arduino não estão correspondendo com os usados no projeto.
+
