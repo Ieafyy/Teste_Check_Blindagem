@@ -12,6 +12,7 @@ class checagem_blindagem(object):
         if checagem_blindagem.start == 0:
 
             self.placas = ['', '', '', '']
+            self.valores_invalidos = ['', ' ', '0', 'None']
             self.placas_status = ['', '', '', '']
             self.arduino = pyfirmata.Arduino("COM3")
             self.it = pyfirmata.util.Iterator(self.arduino)
@@ -80,25 +81,25 @@ class checagem_blindagem(object):
     def aprovar(self, *args, **params):
 
         relatorio = open('relatorio.txt', 'w')
-        if self.placas[0] != "0" or "":
+        if str(self.placas[0]) not in self.valores_invalidos:
             if self.placas_status[0]:
                 relatorio.write(str(self.placas[0]) + " -> APROVADO\n")
             else:
                 relatorio.write(str(self.placas[0]) + " -> REPROVADO\n")
 
-        if self.placas[1] != "0" or "":
+        if str(self.placas[1]) not in self.valores_invalidos:
             if self.placas_status[1]:
                 relatorio.write(str(self.placas[1]) + " -> APROVADO\n")
             else:
                 relatorio.write(str(self.placas[1]) + " -> REPROVADO\n")
         
-        if self.placas[2] != "0" or "":
+        if str(self.placas[2]) not in self.valores_invalidos:
             if self.placas_status[2]:
                 relatorio.write(str(self.placas[2]) + " -> APROVADO\n")
             else:
                 relatorio.write(str(self.placas[2]) + " -> REPROVADO\n")
 
-        if self.placas[3] != "0" or "":
+        if str(self.placas[3]) not in self.valores_invalidos:
             if self.placas_status[3]:
                 relatorio.write(str(self.placas[3]) + " -> APROVADO\n")
             else:
